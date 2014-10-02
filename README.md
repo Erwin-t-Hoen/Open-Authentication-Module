@@ -75,7 +75,7 @@ If you want to have your users login to their Mendix app with their credentials 
 
 
 If you need 2-factor authentication for accessing your app, then make use of the options that Google offers for this purpose in stead of build 2-factor authentication from scratch in your app. <br>
-Using a corporate Google account, users can be setup so that the login process will require 2-factor authentication This](https://support.google.com/a/answer/184711?hl=en) is how you set this up on Google
+Using a corporate Google account, users can be setup so that the login process will require 2-factor authentication. <a href="https://support.google.com/a/answer/184711?hl=en>This</a> is how you set this up on Google
 
 ## Features and limitations
 
@@ -127,7 +127,7 @@ Using a corporate Google account, users can be setup so that the login process w
  
 
 ## Frequently Asked Questions
-Ask your question at the Mendix Community Forum](https://mxforum.mendix.com/)
+Ask your question at the Mendix Community <a href="https://mxforum.mendix.com/">Forum</a>
 
 * None
 
