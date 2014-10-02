@@ -41,18 +41,20 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 - <a href="http://developers.facebook.com/docs/authentication/">Facebook</a> <a href="http://www.sociallipstick.com/?p=239">(see here)</a><br>
 - <a href="https://developer.foursquare.com/overview/auth">Foursquare</a><br>
 - <a href="https://developers.geoloqi.com">Geologi</a><br>
+</td>
+<td>
 - <a href="http://developer.github.com/v3/oauth/">Github</a><br>
 - <a href="https://developers.google.com/accounts/docs/OAuth2">Google</a><br>
 - <a href="https://developer.linkedin.com/documents/authentication">Linkedin</a><br>
 - Mailchimp<br>
 - <a href="http://www.meetup.com/meetup_api/auth/#oauth2">Meetup</a>
-</td>
-<td>
 - <a href="http://nationbuilder.com/api_quickstart">Nationbuilder</a><br>
 - Paypal<br>
 - Reddit<br>
 - <a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm">Salesforce</a><br>
 - Scoop.it<br>
+</td>
+<td>
 - <a href="http://www.sharefile.com/">Sharefile Citrix</a><br>
 - StockTwits<br>
 - <a href="http://developers.soundcloud.com/docs/api/reference">Soundcloud</a><br>
@@ -61,7 +63,7 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 - WePay<br>
 - Wordpress<br>
 - Yahoo<br>
-- Yammer<br>
+- Yammer
 </td>
 </table>
 *For a complete list see <a href="http://www.cheatography.com/kayalshri/cheat-sheets/oauth-end-points/">here</a>*
