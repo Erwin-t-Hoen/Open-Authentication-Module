@@ -33,7 +33,7 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 <tr>
 <td>
 * <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e">37signals (draft 5)</a>
-<li> <a href="http://developers.box.com/oauth/">Box</a></li>
+* <a href="http://developers.box.com/oauth/">Box</a>
 <li> <a href="http://beeminder.com/api">Beeminder</a></li>
 <li> <a href="http://www.campaignmonitor.com/api/getting-started/#authenticating_with_oauth">Campaign Monitor</a></li>
 <li> DailyMotion
