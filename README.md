@@ -33,39 +33,39 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 <tr>
 <td>
 <li> <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e">37signals (draft 5)</a></li>
-<li> [Box](http://developers.box.com/oauth/)
-<li> [Beeminder](http://beeminder.com/api)
-<li> [Campaign Monitor](http://www.campaignmonitor.com/api/getting-started/#authenticating_with_oauth)
+<li> <a href="http://developers.box.com/oauth/">Box</a></li>
+<li> <a href="http://beeminder.com/api">Beeminder</a></li>
+<li> <a href="http://www.campaignmonitor.com/api/getting-started/#authenticating_with_oauth">Campaign Monitor</a></li>
 <li> DailyMotion
-<li> [Do.com (draft 22)](https://do.com)
-<li> [Dropbox](https://www.dropbox.com/developers/core/docs#oa2-authorize)
-<li> [Facebook](http://developers.facebook.com/docs/authentication/) [(see here)](http://www.sociallipstick.com/?p=239)
-<li> [Foursquare](https://developer.foursquare.com/overview/auth)
-<li> [Geologi](https://developers.geoloqi.com)
-<li> [Githib](http://developer.github.com/v3/oauth/)
-<li> [Google](https://developers.google.com/accounts/docs/OAuth2)
-<li> [Linkedin](https://developer.linkedin.com/documents/authentication)
+<li> <a href="https://do.com">Do.com (draft 22)</a></li>
+<li> <a href="https://www.dropbox.com/developers/core/docs#oa2-authorize">Dropbox</a></li>
+<li> <a href="http://developers.facebook.com/docs/authentication/">Facebook</a></li> <a href="http://www.sociallipstick.com/?p=239">(see here)</a></li>
+<li> <a href="https://developer.foursquare.com/overview/auth">Foursquare</a></li>
+<li> <a href="https://developers.geoloqi.com">Geologi</a></li>
+<li> <a href="http://developer.github.com/v3/oauth/">Github</a></li>
+<li> <a href="https://developers.google.com/accounts/docs/OAuth2">Google</a></li>
+<li> <a href="https://developer.linkedin.com/documents/authentication">Linkedin</a></li>
 <li> Mailchimp
 </td>
 <td>
-<li> [Meetup](http://www.meetup.com/meetup_api/auth/#oauth2)
-<li> [Nationbuilder](http://nationbuilder.com/api_quickstart)
+<li> <a href="http://www.meetup.com/meetup_api/auth/#oauth2">Meetup</a></li>
+<li> <a href="http://nationbuilder.com/api_quickstart">Nationbuilder</a></li>
 <li> Paypal
 <li> Reddit
-<li> [Salesforce](http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm)
+<li> <a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm">Salesforce</a></li>
 <li> Scoop.it
-<li> [Sharefile Citrix](http://www.sharefile.com/)
+<li> <a href="http://www.sharefile.com/">Sharefile Citrix</a></li>
 <li> StockTwits
-<li> [Soundcloud](http://developers.soundcloud.com/docs/api/reference)
+<li> <a href="http://developers.soundcloud.com/docs/api/reference">Soundcloud</a></li>
 <li> Vimeo
-<li> [Windows Live](http://msdn.microsoft.com/en-us/library/live/hh243647.aspx)
+<li> <a href="http://msdn.microsoft.com/en-us/library/live/hh243647.aspx">Windows Live</a></li>
 <li> WePay
 <li> Wordpress
 <li> Yahoo
 <li> Yammer
 </td>
 </table>
-*For a complete list see [here](http://www.cheatography.com/kayalshri/cheat-sheets/oauth-end-points/)*
+*For a complete list see <a href="http://www.cheatography.com/kayalshri/cheat-sheets/oauth-end-points/">here</a>*
 
 ## Typical usage scenario
 
@@ -74,7 +74,7 @@ If you want to have your users login to their Mendix app with their credentials 
 
 
 If you need 2-factor authentication for accessing your app, then make use of the options that Google offers for this purpose in stead of build 2-factor authentication from scratch in your app. <br>
-Using a corporate Google account, users can be setup so that the login process will require 2-factor authentication [This](https://support.google.com/a/answer/184711?hl=en) is how you set this up on Google
+Using a corporate Google account, users can be setup so that the login process will require 2-factor authentication This](https://support.google.com/a/answer/184711?hl=en) is how you set this up on Google
 
 ## Features and limitations
 
@@ -126,7 +126,7 @@ Using a corporate Google account, users can be setup so that the login process w
  
 
 ## Frequently Asked Questions
-Ask your question at the Mendix Community [Forum](https://mxforum.mendix.com/)
+Ask your question at the Mendix Community Forum](https://mxforum.mendix.com/)
 
 * None
 
