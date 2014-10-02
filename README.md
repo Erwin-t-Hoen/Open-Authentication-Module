@@ -44,10 +44,10 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 - <a href="http://developer.github.com/v3/oauth/">Github</a><br>
 - <a href="https://developers.google.com/accounts/docs/OAuth2">Google</a><br>
 - <a href="https://developer.linkedin.com/documents/authentication">Linkedin</a><br>
-- Mailchimp
+- Mailchimp<br>
+- <a href="http://www.meetup.com/meetup_api/auth/#oauth2">Meetup</a>
 </td>
 <td>
-- <a href="http://www.meetup.com/meetup_api/auth/#oauth2">Meetup</a><br>
 - <a href="http://nationbuilder.com/api_quickstart">Nationbuilder</a><br>
 - Paypal<br>
 - Reddit<br>
