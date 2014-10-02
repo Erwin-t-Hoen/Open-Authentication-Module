@@ -129,7 +129,7 @@ Using a corporate Google account, users can be setup so that the login process w
 ## Frequently Asked Questions
 
 
-Ask your question at the Mendix Community <a href="https://mxforum.mendix.com/">Forum</a>
+Ask your question at the Mendix Community <a href="https://mxforum.mendix.com/" target="_blank">Forum</a>
 
 * None
 
