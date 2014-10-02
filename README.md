@@ -32,37 +32,37 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 <table>
 <tr>
 <td>
-* <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e">37signals (draft 5)</a><br>
-* <a href="http://developers.box.com/oauth/">Box</a><br>
-<li> <a href="http://beeminder.com/api">Beeminder</a></li>
-<li> <a href="http://www.campaignmonitor.com/api/getting-started/#authenticating_with_oauth">Campaign Monitor</a></li>
-<li> DailyMotion
-<li> <a href="https://do.com">Do.com (draft 22)</a></li>
-<li> <a href="https://www.dropbox.com/developers/core/docs#oa2-authorize">Dropbox</a></li>
-<li> <a href="http://developers.facebook.com/docs/authentication/">Facebook</a></li> <a href="http://www.sociallipstick.com/?p=239">(see here)</a></li>
-<li> <a href="https://developer.foursquare.com/overview/auth">Foursquare</a></li>
-<li> <a href="https://developers.geoloqi.com">Geologi</a></li>
-<li> <a href="http://developer.github.com/v3/oauth/">Github</a></li>
-<li> <a href="https://developers.google.com/accounts/docs/OAuth2">Google</a></li>
-<li> <a href="https://developer.linkedin.com/documents/authentication">Linkedin</a></li>
-<li> Mailchimp
+- <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e">37signals (draft 5)</a><br>
+- <a href="http://developers.box.com/oauth/">Box</a><br>
+- <a href="http://beeminder.com/api">Beeminder</a><br>
+- <a href="http://www.campaignmonitor.com/api/getting-started/#authenticating_with_oauth">Campaign Monitor</a><br>
+- DailyMotion<br>
+- <a href="https://do.com">Do.com (draft 22)</a><br>
+- <a href="https://www.dropbox.com/developers/core/docs#oa2-authorize">Dropbox</a><br>
+- <a href="http://developers.facebook.com/docs/authentication/">Facebook</a> <a href="http://www.sociallipstick.com/?p=239">(see here)</a><br>
+- <a href="https://developer.foursquare.com/overview/auth">Foursquare</a><br>
+- <a href="https://developers.geoloqi.com">Geologi</a><br>
+- <a href="http://developer.github.com/v3/oauth/">Github</a><br>
+- <a href="https://developers.google.com/accounts/docs/OAuth2">Google</a><br>
+- <a href="https://developer.linkedin.com/documents/authentication">Linkedin</a><br>
+- Mailchimp
 </td>
 <td>
-<li> <a href="http://www.meetup.com/meetup_api/auth/#oauth2">Meetup</a></li>
-<li> <a href="http://nationbuilder.com/api_quickstart">Nationbuilder</a></li>
-<li> Paypal
-<li> Reddit
-<li> <a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm">Salesforce</a></li>
-<li> Scoop.it
-<li> <a href="http://www.sharefile.com/">Sharefile Citrix</a></li>
-<li> StockTwits
-<li> <a href="http://developers.soundcloud.com/docs/api/reference">Soundcloud</a></li>
-<li> Vimeo
-<li> <a href="http://msdn.microsoft.com/en-us/library/live/hh243647.aspx">Windows Live</a></li>
-<li> WePay
-<li> Wordpress
-<li> Yahoo
-<li> Yammer
+- <a href="http://www.meetup.com/meetup_api/auth/#oauth2">Meetup</a><br>
+- <a href="http://nationbuilder.com/api_quickstart">Nationbuilder</a><br>
+- Paypal<br>
+- Reddit<br>
+- <a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm">Salesforce</a><br>
+- Scoop.it<br>
+- <a href="http://www.sharefile.com/">Sharefile Citrix</a><br>
+- StockTwits<br>
+- <a href="http://developers.soundcloud.com/docs/api/reference">Soundcloud</a><br>
+- Vimeo<br>
+- <a href="http://msdn.microsoft.com/en-us/library/live/hh243647.aspx">Windows Live</a><br>
+- WePay<br>
+- Wordpress<br>
+- Yahoo<br>
+- Yammer<br>
 </td>
 </table>
 *For a complete list see <a href="http://www.cheatography.com/kayalshri/cheat-sheets/oauth-end-points/">here</a>*
