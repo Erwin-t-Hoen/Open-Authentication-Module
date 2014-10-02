@@ -31,35 +31,35 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 ###Services that support OAuth 2
 <table>
 <tr><td>
-- <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e">37signals (draft 5)</a><br>
-- <a href="http://developers.box.com/oauth/">Box</a><br>
-- <a href="http://beeminder.com/api">Beeminder</a><br>
-- <a href="http://www.campaignmonitor.com/api/getting-started/#authenticating_with_oauth">Campaign Monitor</a><br>
+- <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e" target="_blank">37signals (draft 5)</a><br>
+- <a href="http://developers.box.com/oauth/" target="_blank">Box</a><br>
+- <a href="http://beeminder.com/api" target="_blank">Beeminder</a><br>
+- <a href="http://www.campaignmonitor.com/api/getting-started/#authenticating_with_oauth" target="_blank">Campaign Monitor</a><br>
 - DailyMotion<br>
-- <a href="https://do.com">Do.com (draft 22)</a><br>
-- <a href="https://www.dropbox.com/developers/core/docs#oa2-authorize">Dropbox</a><br>
-- <a href="http://developers.facebook.com/docs/authentication/">Facebook</a> <a href="http://www.sociallipstick.com/?p=239">(see here)</a><br>
-- <a href="https://developer.foursquare.com/overview/auth">Foursquare</a><br>
-- <a href="https://developers.geoloqi.com">Geologi</a><br>
+- <a href="https://do.com" target="_blank">Do.com (draft 22)</a><br>
+- <a href="https://www.dropbox.com/developers/core/docs#oa2-authorize" target="_blank">Dropbox</a><br>
+- <a href="http://developers.facebook.com/docs/authentication/" target="_blank">Facebook</a> <a href="http://www.sociallipstick.com/?p=239">(see here)</a><br>
+- <a href="https://developer.foursquare.com/overview/auth" target="_blank">Foursquare</a><br>
+- <a href="https://developers.geoloqi.com" target="_blank">Geologi</a><br>
 </td>
 <td>
-- <a href="http://developer.github.com/v3/oauth/">Github</a><br>
-- <a href="https://developers.google.com/accounts/docs/OAuth2">Google</a><br>
-- <a href="https://developer.linkedin.com/documents/authentication">Linkedin</a><br>
+- <a href="http://developer.github.com/v3/oauth/" target="_blank">Github</a><br>
+- <a href="https://developers.google.com/accounts/docs/OAuth2" target="_blank">Google</a><br>
+- <a href="https://developer.linkedin.com/documents/authentication" target="_blank">Linkedin</a><br>
 - Mailchimp<br>
-- <a href="http://www.meetup.com/meetup_api/auth/#oauth2">Meetup</a>
-- <a href="http://nationbuilder.com/api_quickstart">Nationbuilder</a><br>
+- <a href="http://www.meetup.com/meetup_api/auth/#oauth2" target="_blank">Meetup</a>
+- <a href="http://nationbuilder.com/api_quickstart" target="_blank">Nationbuilder</a><br>
 - Paypal<br>
 - Reddit<br>
-- <a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm">Salesforce</a><br>
+- <a href="http://www.salesforce.com/us/developer/docs/api_rest/Content/quickstart_oauth.htm" target="_blank">Salesforce</a><br>
 - Scoop.it<br>
 </td>
 <td>
-- <a href="http://www.sharefile.com/">Sharefile Citrix</a><br>
+- <a href="http://www.sharefile.com/" target="_blank">Sharefile Citrix</a><br>
 - StockTwits<br>
-- <a href="http://developers.soundcloud.com/docs/api/reference">Soundcloud</a><br>
+- <a href="http://developers.soundcloud.com/docs/api/reference" target="_blank">Soundcloud</a><br>
 - Vimeo<br>
-- <a href="http://msdn.microsoft.com/en-us/library/live/hh243647.aspx">Windows Live</a><br>
+- <a href="http://msdn.microsoft.com/en-us/library/live/hh243647.aspx" target="_blank">Windows Live</a><br>
 - WePay<br>
 - Wordpress<br>
 - Yahoo<br>
@@ -75,7 +75,7 @@ If you want to have your users login to their Mendix app with their credentials 
 
 
 If you need 2-factor authentication for accessing your app, then make use of the options that Google offers for this purpose in stead of build 2-factor authentication from scratch in your app. <br>
-Using a corporate Google account, users can be setup so that the login process will require 2-factor authentication. <a href="https://support.google.com/a/answer/184711?hl=en">This</a> is how you set this up on Google
+Using a corporate Google account, users can be setup so that the login process will require 2-factor authentication. <a href="https://support.google.com/a/answer/184711?hl=en" target="_blank">This</a> is how you set this up on Google
 
 ## Features and limitations
 
