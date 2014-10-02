@@ -66,7 +66,7 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 - Yammer
 </td>
 </table>
-*For a complete list see <a href="http://www.cheatography.com/kayalshri/cheat-sheets/oauth-end-points/">here</a>*
+*For a complete list see <a href="http://www.cheatography.com/kayalshri/cheat-sheets/oauth-end-points/" target="_blank">here</a>*
 
 ## Typical usage scenario
 
