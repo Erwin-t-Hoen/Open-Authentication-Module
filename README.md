@@ -30,8 +30,7 @@ The Open Authentication Module allow you to setup your app for authentication us
 The module can easily be expanded to incorporate any OAuth 2 provider.
 ###Services that support OAuth 2
 <table>
-<tr>
-<td>
+<tr><td>
 - <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e">37signals (draft 5)</a><br>
 - <a href="http://developers.box.com/oauth/">Box</a><br>
 - <a href="http://beeminder.com/api">Beeminder</a><br>
