@@ -32,7 +32,7 @@ The module can easily be expanded to incorporate any OAuth 2 provider.
 <table>
 <tr>
 <td>
-<li> [37signals (draft 5)](http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e)
+<li> <a href="http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e)>[37signals (draft 5)]</a></li>
 <li> [37signals (draft 5)](http://groups.google.com/group/37signals-api/browse_thread/thread/86b0da52134c1b7e)
 <li> [Box](http://developers.box.com/oauth/)
 <li> [Beeminder](http://beeminder.com/api)
