@@ -1,1 +1,1 @@
-# Coming soon!
+# Javasource files for the OAuth 2.0 Module
