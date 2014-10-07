@@ -1,1 +1,1 @@
-# Coming soon!
+# Resources for the OAuth 2.0 Module
