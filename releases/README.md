@@ -1,1 +1,1 @@
-# This dir contains the releases for the Oauth 2.0 Module
+# This dir contains the releases for the OAuth 2.0 Module
