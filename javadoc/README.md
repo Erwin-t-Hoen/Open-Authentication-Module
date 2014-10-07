@@ -1,1 +1,1 @@
-# Coming soon!
+# Javadoc for the OAuth 2.0 Module
