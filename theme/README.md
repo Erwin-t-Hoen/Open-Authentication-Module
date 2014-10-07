@@ -1,1 +1,1 @@
-# Coming soon!
+# Theme files used with the OAuth 2.0 Module
