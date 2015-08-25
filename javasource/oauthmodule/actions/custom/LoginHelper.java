@@ -55,16 +55,15 @@ class LoginHelper {
                 break;
             }
         }
-        if (session == null) {
-        	Core.getLogger("OauthLogin").debug("No active session found, initializing new session");
-            try {
-                session = Core.initializeSession(user, null);
-            } catch (CoreException e) {
-            	Core.getLogger("OauthLogin").error("Failed to initialize new Mendix session " + e);
-                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                throw new RuntimeException("Single Sign On unable to create new session");
-            }
+		
+		try {
+            session = Core.initializeSession(user, session != null ? session.getId().toString() : null);
+        } catch (CoreException e) {
+        	Core.getLogger("OauthLogin").error("Failed to initialize new Mendix session " + e);
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            throw new RuntimeException("Single Sign On unable to create new session");
         }
+
 
         // no existing session found, perform login using the provided username
         Core.getLogger("OauthLogin").debug("Setting Mendix runtime cookies (XASSESSIONID, XASID and originURI)");

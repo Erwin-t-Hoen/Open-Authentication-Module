@@ -3,10 +3,13 @@ package oauthmodule.actions.custom;
 
 import oauthmodule.proxies.OAuthConfig;
 import oauthmodule.proxies.OAuthMessage;
+import oauthmodule.proxies.Parameter;
 import oauthmodule.proxies.constants.Constants;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletException;
@@ -93,7 +96,7 @@ public class OauthCallback extends RequestHandler{
 		boolean cookieStateVerified = false;
 		if (cookies != null) 
 		{
-			for(int i=0; i<cookies.length; i++) 
+			for(int i=0; i<cookies.length; i++)
 			{
 				Cookie cookie = cookies[i];
 				Core.getLogger("OauthCallback").debug("found cookie with name: "+cookie.getName());
@@ -252,13 +255,13 @@ public class OauthCallback extends RequestHandler{
 			OAuthConfig configuration = getConfig(context);
 			
 			if(pathParameters[1].equals("google")){
-			 user =resolveUser(context, jsonObj.get(configuration.getUserId_Google()).toString(),configuration);
+			 user =resolveUser(context, jsonObj, configuration);
 			}
 			else if(pathParameters[1].equals("linkedin")){
-				 user =resolveUser(context, jsonObj.get(configuration.getUserId_Linkedin()).toString(),configuration);
+				 user =resolveUser(context, jsonObj, configuration);
 			}
 			else if(pathParameters[1].equals("facebook")){
-				 user =resolveUser(context, jsonObj.get(configuration.getUserId_Facebook()).toString(),configuration);
+				 user =resolveUser(context, jsonObj, configuration);
 			}
 
 			if(user != null){
@@ -289,20 +292,32 @@ public class OauthCallback extends RequestHandler{
 	/**
 	 * Method to call a microflow that will resolve the user based on the mfInput parameter
 	 */
-	private User resolveUser(IContext context, String mfInput, OAuthConfig configuration) {
+	private User resolveUser(IContext context, JSONObject json, OAuthConfig configuration) {
 		try {
 			Microflows microflow = configuration.getOAuthConfig_Microflows();
 			if (microflow == null) {
 				throw new CoreRuntimeException(
 						"Microflow to resolve user not set in GoogleOauth configuration, please contact the application administrator");
 			}
+			List<IMendixObject> parametersObjs = Core.retrieveByPath(context, 
+					configuration.getMendixObject(), Parameter.MemberNames.Parameter_OAuthConfig.toString());
+			List<Parameter> parameters = new LinkedList<Parameter>();
+			
+			for (IMendixObject parametersObj : parametersObjs) {
+				parameters.add(Parameter.initialize(context, parametersObj));
+			}
+			
 			Map<String, Object> params = new HashMap<String, Object>();
 			String actionName = microflow.getCompleteName();
-			Map<String, IDataType> inputParameters = Core.getInputParameters(actionName);
-			for (String name : inputParameters.keySet()) {
-				params.put(name, mfInput);
-				break;
+			
+			for (Parameter parameter : parameters) {
+				mxmodelreflection.proxies.Parameter reflParameter = parameter.getParameter_Parameter();
+				if (reflParameter != null) {
+					Object value = json.get(parameter.getJSONKey());
+					params.put(reflParameter.getName(), (value != null ? value.toString() : null) );
+				}
 			}
+			
 			Core.getLogger("OauthCallback").debug("Calling action "+actionName+" with params: "+params);
 			Object result = Core.execute(context, actionName, params);
 			/*
