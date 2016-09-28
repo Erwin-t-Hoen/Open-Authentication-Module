@@ -13,13 +13,13 @@
     <td bgcolor="#DDD"> Type</td><td>Module</td>
 </tr>
 <tr> 
-    <td bgcolor="#DDD"> Latest version</td><td>1.2</td>
+    <td bgcolor="#DDD"> Latest version</td><td>1.3</td>
 </tr>
 <tr> 
-    <td bgcolor="#DDD"> Package name</td><td>OAuthModule_v1.2.mpk</td>
+    <td bgcolor="#DDD"> Package name</td><td>OAuthModule_v1.3.mpk</td>
 </tr>
 <tr> 
-    <td bgcolor="#DDD"> Released</td><td>10-03-2014</td>
+    <td bgcolor="#DDD"> Released</td><td>28-09-2016</td>
 </tr>
 </table>
 
@@ -118,13 +118,14 @@ For Google e.g. http://myfirstapp.mendixcloud.com/callback/google
 12. The next setup step for your OAuth module is:  navigate to https://(yourapp)/admin.html and login with your Admin account
 13. Synchronize your Model Reflection module and make sure that the data for the OAuthModule is created
 14. Select the OAuth Config menu item and select the microflow ResolveUserByEmail
-15. And you're done!
+15. To allow your user to return to a logout page, implement the sign out button as found in the #implementation Oauth_Layout
+16. Don't forget to set your requesthandlers in the cloud ('signin/','callback/' and 'logout/')
+17. And you're done!
  
 
-16. Wait, what if security requirements are more strict? Perform step 17
-17. Delete the admin.html from your theme folder to make sure that OAuth is the only login option, and redeploy your app
-18. Don't forget to set your requesthandlers in the cloud ('signin/' and 'callback/')
-19. Done!
+18. Wait, what if security requirements are more strict? Perform step 17
+19. Delete the admin.html from your theme folder to make sure that OAuth is the only login option, and redeploy your app
+20. Done!
 
 If you want to use another OAuth provider than those that come with the module read the Add_OAuth_Provider_v1.2.pdf file on github.
 To implement your own resolve user logic either adapt the microflow ResolveUserByEmail or create your own microflow and link this in the OAuth config.

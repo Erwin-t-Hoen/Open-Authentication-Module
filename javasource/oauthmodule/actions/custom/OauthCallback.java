@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import mxmodelreflection.proxies.Microflows;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;

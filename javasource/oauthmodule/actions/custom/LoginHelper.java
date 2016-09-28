@@ -1,10 +1,7 @@
 package oauthmodule.actions.custom;
 
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.lang.StringUtils;
-
-
+import org.apache.commons.lang3.StringUtils;
 
 import com.mendix.core.Core;
 import com.mendix.core.CoreException;
@@ -41,6 +38,12 @@ class LoginHelper {
      * @param context
      * @param user
      */
+    
+    /*
+     * 28-09-2016
+     * Added option to reuse sessions for when the app is being used with anonymous users
+     * Thanks to Arjen Lammers for pointing this out
+     */
     protected static void createSession(IMxRuntimeRequest request, IMxRuntimeResponse response, IContext context, IUser user) {
         String cookie = request.getCookie(XAS_SESSION_ID);
         if (cookie == null || cookie.isEmpty()) {
@@ -55,16 +58,14 @@ class LoginHelper {
                 break;
             }
         }
-        if (session == null) {
-        	Core.getLogger("OauthLogin").debug("No active session found, initializing new session");
-            try {
-                session = Core.initializeSession(user, null);
-            } catch (CoreException e) {
-            	Core.getLogger("OauthLogin").error("Failed to initialize new Mendix session " + e);
-                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                throw new RuntimeException("Single Sign On unable to create new session");
-            }
-        }
+
+        try {
+        	            session = Core.initializeSession(user, session != null ? session.getId().toString() : null);
+        	        } catch (CoreException e) {
+        	        	Core.getLogger("OauthLogin").error("Failed to initialize new Mendix session " + e);
+        	            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        	             throw new RuntimeException("Single Sign On unable to create new session");
+        	          }
 
         // no existing session found, perform login using the provided username
         Core.getLogger("OauthLogin").debug("Setting Mendix runtime cookies (XASSESSIONID, XASID and originURI)");

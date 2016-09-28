@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import oauthmodule.proxies.constants.Constants;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.mendix.core.Core;
 import com.mendix.externalinterface.connector.RequestHandler;
