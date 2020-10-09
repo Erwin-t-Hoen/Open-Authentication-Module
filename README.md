@@ -13,20 +13,20 @@
     <td bgcolor="#DDD"> Type</td><td>Module</td>
 </tr>
 <tr> 
-    <td bgcolor="#DDD"> Latest version</td><td>1.3</td>
+    <td bgcolor="#DDD"> Latest version</td><td>1.4</td>
 </tr>
 <tr> 
-    <td bgcolor="#DDD"> Package name</td><td>OAuthModule_v1.3.mpk</td>
+    <td bgcolor="#DDD"> Package name</td><td>OAuthModule_v1.4.mpk</td>
 </tr>
 <tr> 
-    <td bgcolor="#DDD"> Released</td><td>28-09-2016</td>
+    <td bgcolor="#DDD"> Released</td><td>10-09-2020</td>
 </tr>
 </table>
 
 ##Description
 
 
-The Open Authentication Module allows you to setup your app for authenticating users with their Google, Linkedin or Facebook account.
+The Open Authentication Module allows you to setup your app for authenticating users with their Google, Microsoft Azure, Linkedin or Facebook account.
 The module can easily be expanded to incorporate any OAuth 2 provider.
 
 ##What is OAuth?
@@ -77,7 +77,7 @@ OAuth 2 is an open standard to authorization. OAuth provides client applications
 ## Typical usage scenario
 
 
-If you want to have your users login to their Mendix app with their credentials from their favorite social network or cloud app. For example when using Chrome the user already logs in automatically into their Google account, then the Oauth module will allow the user to be logged in directly into their Mendix app (SSO).
+If you want to have your users login to their Mendix app with their credentials from their favorite social network, Microsoft Azure account or cloud app. For example when using Chrome the user already logs in automatically into their Google account, then the Oauth module will allow the user to be logged in directly into their Mendix app (SSO).
 
 
 If you need 2-factor authentication for accessing your app, then make use of the options that Google offers for this purpose in stead of build 2-factor authentication from scratch in your Mendix app. <br>
@@ -86,7 +86,7 @@ Using a corporate Google account, users can be setup so that the login process w
 ## Features and limitations
 
 
-<li> Authenticate users via Facebook, Google or Linkedin OOTB</li>
+<li> Authenticate users via Azure, Facebook, Google or Linkedin OOTB</li>
 <li> Or use only one of these providers (pick and choose)</li>
 <li> Use 2-factor authentication provided by the OAuth providers</li>
 <li> Style your own fault pages</li>
@@ -106,7 +106,7 @@ Using a corporate Google account, users can be setup so that the login process w
 1. Download the zip file from Github
 2. Extract the zip
 3. Import the module (.mpk) into you application as a new module
-4. From the theme directory copy all the files to your theme directory
+4. From the resources/Oauth directory copy all the files to your theme directory
 5. Connect the page and microflow from the #Implementation folder to your navigation Assign the permissions to the userrole(s)
 6. Import the Community Commons module from the app store if not already part of your project
 7. Import the Model Reflection module from the app store  if not already part of your project
@@ -115,7 +115,7 @@ Using a corporate Google account, users can be setup so that the login process w
 10. Register your app with the OAuth provider, make sure that the callback URL is https://(yourapp)/callback/(OAuth_provider)
 For Google e.g. http://myfirstapp.mendixcloud.com/callback/google
 11. Update the constants ClientId_(OAuth provider) and ClientSecret_(OAuth provider)
-12. The next setup step for your OAuth module is:  navigate to https://(yourapp)/admin.html and login with your Admin account
+12. The next setup step for your OAuth module is:  navigate to https://(yourapp)/login-without-sso.html and login with your Admin account
 13. Synchronize your Model Reflection module and make sure that the data for the OAuthModule is created
 14. Select the OAuth Config menu item and select the microflow ResolveUserByEmail
 15. To allow your user to return to a logout page, implement the sign out button as found in the #implementation Oauth_Layout
@@ -124,7 +124,7 @@ For Google e.g. http://myfirstapp.mendixcloud.com/callback/google
  
 
 18. Wait, what if security requirements are more strict? Perform step 17
-19. Delete the admin.html from your theme folder to make sure that OAuth is the only login option, and redeploy your app
+19. Delete the login-without-sso.html from your theme folder to make sure that OAuth is the only login option, and redeploy your app
 20. Done!
 
 If you want to use another OAuth provider than those that come with the module read the Add_OAuth_Provider_v1.2.pdf file on github.
@@ -133,13 +133,18 @@ To implement your own resolve user logic either adapt the microflow ResolveUserB
 ## Dependencies
  
 
-1. Mendix 5.8.1 environment
-2. Mx Model Reflection module
-3. Community Commons module
-4. apache-httpcomponents-httpclient.jar
-5. httpclient-4.3.5.jar
-6. json-simple.jar
-7. org.apache.httpcomponents.httpclient_4.3.5.jar
+ 1. Mendix 8.5.0 environment
+ 2. Mx Model Reflection module
+ 3. Community Commons module
+ 4. guava-27.0-jre.jar
+ 5. jackson-annotations-2.9.5.jar
+ 6. jackson-core-2.9.5.jar
+ 7. jackson-databind-2.9.5.jar
+ 8. java-jwt-3.1.0.jar
+ 9. json-simple.jar
+10. org.apache.commons.lang3.jar
+11. org.apache.httpcomponents.httpclient_4.3.5.jar
+
 
 
 ## Known bugs
